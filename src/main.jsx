@@ -6,6 +6,7 @@ import AppMentor from './AppMentor.jsx'
 import AppMentors from './AppMentors.jsx'
 import AppForm from './AppForm.jsx'
 import AppWrap from './AppWrap.jsx'
+import AppCard from './AppCard.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -13,6 +14,7 @@ createRoot(document.getElementById('root')).render(
     {/* <AppMentor /> */}
     {/* <AppMentors /> */}
     {/* <AppForm /> */}
-    <AppWrap />
+    {/* <AppWrap /> */}
+    <AppCard />
   </StrictMode>,
 )
