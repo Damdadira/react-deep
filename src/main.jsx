@@ -8,6 +8,7 @@ import AppForm from './AppForm.jsx'
 import AppWrap from './AppWrap.jsx'
 import AppCard from './AppCard.jsx'
 import AppTheme from './AppTheme.jsx'
+import AppMentorsButton from './AppMentorsButton.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -17,6 +18,7 @@ createRoot(document.getElementById('root')).render(
     {/* <AppForm /> */}
     {/* <AppWrap /> */}
     {/* <AppCard /> */}
-    <AppTheme />
+    {/* <AppTheme /> */}
+    <AppMentorsButton />
   </StrictMode>,
 )
