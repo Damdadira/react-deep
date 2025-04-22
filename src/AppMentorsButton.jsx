@@ -1,4 +1,4 @@
-import { useReducer } from 'react'
+import { memo, useCallback, useReducer } from 'react'
 import './AppXY.css'
 import personReducer from './reducer/person-reducer';
 
@@ -6,24 +6,26 @@ export default function AppMentorsButton() {
   //useReducer(함수 전달, 초기값 전달)
   const [person, dispatch] = useReducer(personReducer, initialPerson);
 
-  const handleUpdate = () => {
+  const handleUpdate = useCallback(() => {
     const prev = prompt(`누구의 이름을 바꾸고 싶은가요?`);
     const current = prompt(`이름을 무엇으로 바꾸고 싶은가요?`);
 
     //action 객체 전달
     dispatch({ type: 'update', prev, current });
-  };
-  const handleAdd = () => {
+  }, []);
+
+  const handleAdd = useCallback(() => {
     const name = prompt(`추가하고 싶은 멘토의 이름은 무엇인가요?`);
     const title = prompt(`추가하고 싶은 멘토의 직함은 무엇인가요?`);
 
     dispatch({ type: 'add', name, title });
-  };
-  const handleRemove = () => {
+  }, []);
+
+  const handleRemove = useCallback(() => {
     const name = prompt(`삭제하고 싶은 멘토의 이름은 무엇인가요?`);
     
     dispatch({ type: 'remove', name });
-  };
+  }, []);
 
   return (
     <div>
@@ -45,7 +47,7 @@ export default function AppMentorsButton() {
   )
 }
 
-function Button({ text, onClick }) {
+const Button = memo(({ text, onClick }) => {
   return (
     <button
       onClick={onClick}
@@ -59,7 +61,7 @@ function Button({ text, onClick }) {
       {text}
     </button>
   )
-}
+});
 
 const initialPerson = {
   name: '엘리',
