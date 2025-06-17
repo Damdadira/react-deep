@@ -13,7 +13,7 @@
 - 개별 컴포넌트별로 유연하게 스타일 커스터마이징
 
 #### 4. 테마 시스템
-- 다크 모드, 라이트 모드 적용
+- Context API로 다크 모드, 라이트 모드 적용
 
 #### 5. Props 기반 스타일 커스터마이징
 - 공통 버튼 UI에 Props를 보내서 서로 다른 스타일 적용
@@ -22,6 +22,7 @@
 ### 🛠 기술 스택
 <div>
   <img src="https://img.shields.io/badge/React-%2320232a.svg?style=flat-square&logo=react&logoColor=%2361DAFB" />&nbsp;
+  <img src="https://img.shields.io/badge/Context--Api-000000?style=flat-square&logoColor=white" />&nbsp;
   <img src="https://img.shields.io/badge/Vite-%23646CFF.svg?style=flat-square&logo=vite&logoColor=white" />&nbsp;
 </div>
 <br/>
