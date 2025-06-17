@@ -1,12 +1,39 @@
-# React + Vite
+# React Study
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 📚 학습 내용
+#### 1. useState
+- 객체 형태의 상태 변화 관리
 
-Currently, two official plugins are available:
+#### 2. useReducer, useCallback
+- 배열 내 객체 형태의 상태를 구조적으로 관리
+- 불필요한 렌더링을 방지하기 위해 콜백 함수 최적화
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### 3. 컴포넌트 분리 및 재사용
+- UI 컴포넌트를 기능 단위로 분리하여 다양한 곳에서 재사용 가능
+- 개별 컴포넌트별로 유연하게 스타일 커스터마이징
 
-## Expanding the ESLint configuration
+#### 4. 테마 시스템
+- 다크 모드, 라이트 모드 적용
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+#### 5. Props 기반 스타일 커스터마이징
+- 공통 버튼 UI에 Props를 보내서 서로 다른 스타일 적용
+<br/>
+
+### 🛠 기술 스택
+<div>
+  <img src="https://img.shields.io/badge/React-%2320232a.svg?style=flat-square&logo=react&logoColor=%2361DAFB" />&nbsp;
+  <img src="https://img.shields.io/badge/Vite-%23646CFF.svg?style=flat-square&logo=vite&logoColor=white" />&nbsp;
+</div>
+<br/>
+
+### 🎯 실행 방법
+
+- **Node.js 18 이상 권장**
+
+```bash
+# 패키지 설치
+npm install   # 또는 npm i
+
+# 개발 서버 실행
+npm run dev
+```
